@@ -23,6 +23,11 @@ const { createApp } = Vue
         }
        
     },
+    computed:{
+        getAllEmails(){
+            return this.emails.length === this.totEmails;
+        }
+    },
     mounted(){
             this.getRandomEmail();
         }      
