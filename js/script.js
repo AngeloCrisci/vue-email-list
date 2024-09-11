@@ -19,10 +19,11 @@ const { createApp } = Vue
                     this.emails.push(response.data.response)
                 });
             }
-            
-        },
-        mounted(){
-            this.getRandomEmail
+           
         }
-    }
+       
+    },
+    mounted(){
+            this.getRandomEmail();
+        }      
   }).mount('#app')
