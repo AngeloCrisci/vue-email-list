@@ -12,7 +12,7 @@ const { createApp } = Vue
     },
     methods: {
         getRandomEmail(){
-            for(let i = 0 ; i < totEmails; i++ ){
+            for(let i = 0 ; i < this.totEmails; i++ ){
                 axios.get(this.apiUrl)
                 .then( (response) => {
                     console.log(response.data.response)
